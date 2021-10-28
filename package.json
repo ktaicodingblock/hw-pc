@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/ktaicoder/hw-pc.git",
+  "author": "ktaicoder <ktaicodingblock.dev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "pc",
+    "hw-proto",
+    "hw-control"
+  ],
+  "scripts": {
+    "build:hw-proto": "yarn workspace @aimk/hw-proto build:cjs",
+    "build:hw-control": "yarn workspace @aimk/hw-control build:cjs",
+    "prebuild": "yarn build:hw-proto && yarn build:hw-control",
+    "build": "yarn workspace @aimk/pc build",
+    "make": "yarn workspace @aimk/pc make",
+    "dev": "yarn workspace @aimk/pc dev"
+  },
+  "resolutions": {
+    "**/node-abi": "^3.2.0"
+  }
+}

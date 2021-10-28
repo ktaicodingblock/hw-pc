@@ -1,0 +1,6 @@
+[submodule "hw-control"]
+	path = hw-control
+	url = https://github.com/ktaicoder/hw-control.git
+[submodule "hw-proto"]
+	path = hw-proto
+	url = https://github.com/ktaicoder/hw-proto.git
